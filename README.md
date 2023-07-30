@@ -54,7 +54,7 @@ const div: Tito<HTMLDivElement> =
 
 ### Symbolism
 
-No namespace collisions! Tito instances will be extended attached to native objects through symbols defined in this library. Extensions will always be scoped and retrievable through their own symbol.
+No namespace collisions! Tito instances will be attached to native objects through symbols defined in this library. Extensions will always be scoped and retrievable through their own symbol.
 
 ```typescript
 // LIB
@@ -76,7 +76,7 @@ If any logic supports reactive input, the output must always be reactive.
 
 ### Lean and mean
 
-Screen space is a limited commodity. All lib variables should strive to have only 4 or less letters
+Screen space is a limited commodity. All lib variables should strive to have only 4 or less characters.
 
 ```typescript
 import { tito, html } from 'tito'
@@ -84,7 +84,7 @@ import { tito, html } from 'tito'
 
 ### Support multiple plugin sets
 
-Extensions aren't applied to the global object to allow for endless forking with plugins. Whenever you apply a plugin, it'll create a new factory.
+Extensions aren't applied to the global object to allow for endless forking of factories with plugins. Whenever you apply a plugin, it'll create a new factory.
 
 ```typescript
 import { html, exit } from 'tito'
