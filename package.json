@@ -4,8 +4,7 @@
   "description": "This Is The One - Full Stack Web Framework",
   "private": true,
   "main": "dist/main.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toonvanvr/tito-web.git"
@@ -14,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/toonvanvr/tito-web/issues"
   },
-  "homepage": "https://github.com/toonvanvr/tito-web#readme"
+  "homepage": "https://github.com/toonvanvr/tito-web#readme",
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
 }
