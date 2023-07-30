@@ -88,7 +88,7 @@ Extensions aren't applied to the global object to allow for endless forking of f
 
 ```typescript
 import { html, exit } from 'tito'
-import { companyComponentsPlugin } from '@your-company/components'
+import { companyComponentsPlugin } from '@your-company/tito-components'
 
 const base = html
 const more = html[tito].plugin(companyComponentsPlugin)[exit]
