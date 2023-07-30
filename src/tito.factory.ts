@@ -1,6 +1,6 @@
-const tito = Symbol('tito')
+import { Engine, Tito } from './tito'
 
-type TitoFactory = {
+export type TitoFactory = {
   [Tag in keyof HTMLElementTagNameMap]: Tito<HTMLElementTagNameMap[Tag]>
 } & {
   [Tag in keyof HTMLElementDeprecatedTagNameMap]: Tito<
@@ -10,21 +10,7 @@ type TitoFactory = {
   [Tag: string]: Tito<HTMLElement>
 }
 
-type Tito<HE extends HTMLElement> = {}
-
-type TitoFactoryConfiguration = {}
-
-class Engine<HE extends HTMLElement> {
-  private readonly he: HE & { [tito]: Engine<HE> }
-
-  static from<HE extends HTMLElement>(he: HE & { [tito]?: Engine<HE> }) {
-    return he[tito] ?? new Engine(he)
-  }
-
-  constructor(he: HE & { [tito]?: Engine<HE> }) {
-    this.he = Object.assign(he, { [tito]: this })
-  }
-}
+export type TitoFactoryConfiguration = {}
 
 export const html = new Proxy<TitoFactory>(
   {} satisfies TitoFactoryConfiguration as any as TitoFactory,
