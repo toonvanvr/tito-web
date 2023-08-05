@@ -6,6 +6,10 @@
       "ES2023",
       "DOM"
     ],
-    "exactOptionalPropertyTypes": true
+    "moduleResolution": "Node16",
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "rootDir": "src/",
+    "outDir": "src/demo/js/",
   }
 }

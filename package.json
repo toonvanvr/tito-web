@@ -1,5 +1,6 @@
 {
   "name": "tito",
+  "type": "module",
   "version": "1.0.0-alpha",
   "description": "This Is The One - Full Stack Web Framework",
   "private": true,
@@ -16,5 +17,8 @@
   "homepage": "https://github.com/toonvanvr/tito-web#readme",
   "dependencies": {
     "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
   }
 }
